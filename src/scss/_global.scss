@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorBlack;
+}
+
+@media(max-width: $mobileSize){
+    body {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.alert-open {
+    height: 87px;
+    width: 255px;
+    @media(max-width: $mobileSize){
+        width: 140px;
+        height: 43px;
+    }
+}
+
+a {
+    font-size: 12px;
+    line-height: 14px;
+    color: $colorDarck;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover, :active {
+        text-decoration: none;
+        color: $colorDarck;
+        opacity: 1;
+    }
+}
+
+.title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    color: $colorBlack;
+    margin: 11px 0 50px 30px;
+    @media (max-width: $desktopSmSize) {
+        font-size: 35px;
+        line-height: 35px;
+        margin: 0 0 35px 25px;
+      }
+    @media(max-width: $mobileSize){
+        font-size: 24px;
+        line-height: 22px;
+        margin: 0 0 20px 20px;
+    }
+}
+
+.subtitle-pink {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    color: $colorPinck;
+    @media(max-width: $mobileSize){
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.subtitle {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    color: #403D46;
+    opacity: 0.7;
+    @media(max-width: $mobileSize){
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+}
+.background-main {
+    background: radial-gradient(145.5% 373.63% at 52.01% 47.2%, rgba(205, 148, 154, 0) 0%, #CD949A 100%),
+    linear-gradient(0deg, rgba(205, 148, 154, 0.5), rgba(205, 148, 154, 0.5));
+}
+.background-second {
+    background: #ffff;
+}
+
+.mobile-show{
+    display: none;
+}
+.mobile-hide{
+    display: block;
+}
+.bury {
+    max-height: 0vh;
+    overflow: hidden;
+  }
+.body-hidden {
+    overflow: hidden;
+}
+
+
+
+@media(max-width: $mobileSize){
+    .mobile-show{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+}
+.tablet-show{
+    display: none;
+}
+.tablet-hide{
+    display: block;
+}
+@media(max-width: $tabletSize){
+    .tablet-show{
+        display: block;
+    }
+    .tablet-hide{
+        display: none;
+    }
+}
+
+.header-right-social-item{
+    & img {
+        border-radius: 7px;
+    }
+}
+
+.alert-toggle:hover{
+    transform: translateY(3px);
+    transition: 0.2s;
+}
+
+@media(max-width: $mobileSize){
+    
+}
+

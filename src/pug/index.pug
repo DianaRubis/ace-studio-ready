@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title start
+    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous')
+    //- link(rel="stylesheet" href='https://unpkg.com/swiper/swiper-bundle.css')
+    //- link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+    link(rel="stylesheet" href="./css/main.css")
+
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css")
+  body
+    include ./parts/header.pug
+    h1 Hello world
+    main.mt-5(style:'margin-top:65px;')
+        div.container1-main.container-fluid(style='position: relative; width: 100%; height: 650px; padding-top: 20px;')
+            div.msg.position-relative
+                img.img-fluid.position-absolute(src="/img/home-page/msg-orange.png" style="top: 120px; right: 100px; max-width: 100%; height: auto; z-index: 3;")
+                img.img-fluid.position-absolute(src="/img/home-page/msg-yellow.png" style="top: 20px; right: 315px; max-width: 100%; height: auto; z-index: 2;")
+                img.img-fluid.position-absolute(src="/img/home-page/msg-purple.png" style="top: 100px; right: 310px; max-width: 100%; height: auto; z-index: 1;")
+                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 30px; left: 160px; width: 20px; height: 20px;")
+                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 180px; right: 730px; width: 20px; height: 20px;")
+                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; right: 500px; width: 20px; height: 20px;")
+                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; left: 120px; width: 20px; height: 20px;")
+                img(src="/img/home-page/x.png" style="position: absolute; top: 25px; right: 590px; width: 15px; height: 15px;")
+                img(src="/img/home-page/x.png" style="position: absolute; top: 450px; right: 720px; width: 15px; height: 15px;")
+                img(src="/img/home-page/x.png" style="position: absolute; top: 600px; left: 520px; width: 15px; height: 15px;")
+                img(src="/img/home-page/x.png" style="position: absolute; top: 500px; right: 200px; width: 15px; height: 15px;")
+            div.text-circle.d-flex.align-items-center.justify-content-between(style="width: 270px; height: 50px; top: 120px; left:50px;position: absolute;border-radius:20px;")
+                div.rounded-circle.bg-warning(style="width: 35px; height: 35px; margin-left:5px; ")
+                p.fs-6(style='margin-right:5px;') #1 Digital company in the town
+            div.headers.position-absolute(style="top: 220px; left: 50px;")
+                h1.fw-bold
+                    | Amet Sed
+                h1.fw-bold
+                    | Cursus Eu
+                h1.fw-bold
+                    | Tellus Eget.
+            div.text.position-absolute(style="top: 380px; left: 50px;")
+                p.text-muted
+                    | Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim
+                p.text-muted
+                    | quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
+            div.buttons.d-flex.position-absolute.justify-content-between(style="top: 450px; left: 50px; width:350px;")
+                a.btn.blue-color.text-white.fw-bold(href="contact-us.html")
+                    | Connect With Us
+                a.btn.fw-bold.text-violate(href="#")
+                    | Browse Our Works
+        div.line-blue
+        div.container2-main.container-fluid.position-relative.text-center(style="width:100%; height:1000px;")
+            div.headers.pt-5
+                h1.fw-bold
+                    | Services That Lead The Way To Better Business
+            div.text.d-flex.align-items-center.pt-3
+                p.text-muted.text-center
+                    | Faucibus fringilla sed integer cursus tellus et, quis ultricies. Aliquam, faucibus arcu in laoreet ac elementum in eget.
+                    | Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet blandit etiam orci est in vel lacus neque pretium.
+            div.all-icon
+                div.row.d-flex.justify-content-center
+                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-4
+                        div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
+                            img(src="/img/home-page/img-1.png" style="max-width: 60px; height: 60px;")
+                        p.pt-4.text-violate.fw-bold
+                            | Mobile App Designing
+                        p.pt-2.little-text.text-muted
+                            | Justo, amet nisl velit quam. Turpis nulla morbi vestibulum morbi cum et.
+                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-4
+                        div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
+                            img(src="/img/home-page/img-2.png" style="max-width: 60px; height: 60px;")
+                        p.pt-4.text-violate.fw-bold
+                            | Website Designing
+                        p.pt-2.little-text.text-muted
+                            | Eu aliquam libero vehicula posuere. Orci viverra id pharetra adipiscing. Convallis.
+                div.row.d-flex.justify-content-center
+                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-3
+                        div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
+                            img(src="/img/home-page/img-3.png" style="max-width: 60px; height: 60px;")
+                        p.pt-4.text-violate.fw-bold
+                            | Graphic Designing
+                        p.pt-2.little-text.text-muted
+                            | Aliquam ut sapien viverra blandit nisi. Nam fames suscipit erat sed id. Risus.
+                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-3
+                        div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
+                            img(src="/img/home-page/img-4.png" style="max-width: 60px; height: 60px;")
+                        p.pt-4.text-violate.fw-bold
+                            | Digital Marketing
+                        p.pt-2.little-text.text-muted
+                            | Pulvinar amet ac potenti quam feugiat praesent maecenas. Platea id egestas.
+            div.headers.pt-5
+                h1.fw-bold
+                    | Companies we work with
+            div.text.d-flex.align-items-center.pt-3
+                p.text-muted.text-center
+                    | Dictum tortor, sed scelerisque mattis malesuada. Urna sed magna a sed nulla egestas bibendum eget.
+                    | Consectetur urna varius dolor, fermentum turpis. Sit malesuada id tortor viverra gravida cras. In quis.
+            div.all-icon
+                div.row.d-flex.justify-content-center
+                    each num in [1, 2, 3, 4, 5, 6]
+                        div.col-1.d-flex.justify-content-center.mt-4
+                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: 60px;")
+                div.row.d-flex.justify-content-center
+                    each num in [7, 8, 9, 10, 11]
+                        div.col-1.d-flex.justify-content-center.mt-4
+                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: 60px;")
+        div.container3-main.container-fluid.position-relative(style="width:100%; height:1000px;")
+            div.row
+                div.col-4(style="margin:0 80px;")
+                    img(src=`/img/home-page/container3-big-img.png`)
+                div.col-6
+                    div.headers
+                        h1.fw-bold
+                            | Our Process
+                    div.text.pt-3
+                        p.text-muted
+                            | Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada.
+                            | Tristique est tellus non maecenas in egestas aliquam. Eget dolor
+                            | pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
+                    div.process-block.d-flex
+                        div.process-bg
+
+    include ./parts/footer.pug
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js' integrity='sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT' crossorigin='anonymous')
+    //- script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    //- script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+    script(src="https://polyfill.io/v3/polyfill.min.js?features=default")
+    script(src="./js/main.js")
