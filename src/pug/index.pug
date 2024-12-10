@@ -42,7 +42,7 @@ html(lang="en")
                     | Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim
                     | quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
             div.buttons.mt-lg-5.mt-md-3.mt-0.flex-row
-                a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6(href="contact-us.html")
+                a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill(href="contact-us.html")
                     | Connect With Us
                 a.btn.fw-bold.text-violate.col-lg-2.col-sm-6(href="#")
                     | Browse Our Works
@@ -103,11 +103,11 @@ html(lang="en")
                     each num in [7, 8, 9, 10, 11]
                         div.col-lg-1.col-md-1.col-2.d-flex.justify-content-center.mt-0.mt-lg-4
                             img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
-        div.container3-main.container-fluid.position-relative.mt-1.mt-lg-4.mt-md-2.justify-content-center(style="width:100%; height:auto;")
-            div.row
-                div.col-lg-4.ps-lg-5.ps-md-3.col-md-4.d-none.d-md-block(style="max-height:250px")
-                    img(src=`/img/home-page/container3-big-img.png`)
-                div.col-12.col-lg-6.col-md-7
+        div.container3-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.justify-content-center(style="width:100%; height:auto;")
+            div.row.justify-content-center
+                div.col-lg-4.ps-lg-5.ps-md-0.col-md-4.d-none.d-md-block
+                    img(src=`/img/home-page/container3-big-img.png` style="max-height:550px")
+                div.col-10.col-lg-6.col-md-7
                     div.headers
                         h1.fw-bold
                             | Our Process
@@ -120,37 +120,56 @@ html(lang="en")
                         div.discovery
                             dov.row.mt-lg-3.mt-md-2.mt-1
                                 div.img.col-2.ms-auto.rounded-3
-                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto;")
+                                    img.d-block.d-sm-none(src=`/img/home-page/discovery.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                    img.d-none.d-sm-block(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto; border-radius:15px;")
                                 div.header.col-10
                                     p.fw-bold Discovery
-                                    p
-                                    | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
-                        div.discovery
+                                    p.text-muted
+                                      | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+                        div.plan
                             dov.row.mt-lg-3.mt-md-2.mt-1
                                 div.img.col-2.ms-auto.rounded-3
-                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto;")
+                                    img.d-block.d-sm-none(src=`/img/home-page/plan.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                    img.d-none.d-sm-block(src=`/img/home-page/plan.png` style="max-width: 60px; height: auto; border-radius:15px;")
                                 div.header.col-10
-                                    p.fw-bold Discovery
-                                    p
-                                        | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
-                        div.discovery
+                                    p.fw-bold Plan
+                                    p.text-muted
+                                        | Tellus, lacus, sem adipiscing ac sem amet. Vitae proin volutpat cras tempus vitae. Ipsum consectetur quis diam hendrerit pharetra amet scelerisque. Elementum risus aliquam quam etiam. Eget eu risus dui lacus, orci. Cras ultricies posuere adipiscing faucibu.
+                        div.execute
                             dov.row.mt-lg-3.mt-md-2.mt-1
                                 div.img.col-2.ms-auto.rounded-3
-                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto")
+                                    img.d-block.d-sm-none(src=`/img/home-page/execute.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                    img.d-none.d-sm-block(src=`/img/home-page/execute.png` style="max-width: 60px; height: auto; border-radius:15px;")
                                 div.header.col-10
-                                    p.fw-bold Discovery
-                                    p
-                                        | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
-                        div.discovery
-                            dov.row.mt-lg-3.mt-md-2.mt-1
-                                div.img.col-2.ms-auto
-                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto")
-                                div.header.col-10
-                                    p.fw-bold Discovery
-                                    p
-                                        | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+                                    p.fw-bold Execute
+                                    p.text-muted
+                                        | Congue ridiculus at tortor mattis turpis bibendum at pulvinar viverra. Ultrices morbi amet quam nisl risus libero, sodales nibh faucibus. Sed gravida elementum auctor fermentum id sem
+                        div.deliver
+                           dov.row.mt-lg-3.mt-md-2.mt-1
+                                   div.img.col-2.ms-auto
+                                       img.d-block.d-sm-none(src=`/img/home-page/deliver.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                       img.d-none.d-sm-block(src=`/img/home-page/deliver.png` style="max-width: 60px; height: auto; border-radius:15px;")
+                                   div.header.col-10
+                                       p.fw-bold Deliver
+                                       p.text-muted
+                                           | Pellentesque id pharetra, semper neque purus. Ante lacinia in ut sagittis sed sapien. In facilisi in a diam. Pellentesque arcu faucibus vel ornare pulvinar sollicitudin eu. Tempus nisi malesuada convallis velit viverra odio. Senectus consectetur fames in sed velit, ornare. Sed arcu.
 
-
+        div.container4-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.text-center(style="width:100%; height:auto;")
+            div.headers.pt-5
+                h1.fw-bold
+                    | See Our Work
+            div.text.d-flex.py-lg-3.py-1.py-md-2
+                p.text-muted.text-center
+                    | Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.
+            div.row.justify-content-center.py-lg-3.py-1.py-md-2
+                div.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                    img(src=`/img/home-page/work-img1.png` )
+                div.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                    img(src=`/img/home-page/work-img2.png` )
+                div.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                    img(src=`/img/home-page/work-img3.png` )
+            a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill.my-lg-4.my-md-2.my-1(href="#")
+                | See all projects
 
 
     include ./parts/footer.pug
