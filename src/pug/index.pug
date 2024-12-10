@@ -15,39 +15,40 @@ html(lang="en")
   body
     include ./parts/header.pug
 
-    main.mt-5
-        div.container1-main.container-fluid.ms-4(style='position: relative; width: 100%; height: 650px; padding-top: 20px;')
+    main.mt-lg-5.mt-2.mt-md-4
+        div.container1-main.container-fluid.ms-0.ms-lg-4.ms-md-2.h-auto(style='position: relative; width: 100%;  padding-top: 20px;')
             div.msg.position-relative
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-orange.png" style="top: 120px; right: 100px; max-width: 100%; height: auto; z-index: 3;")
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-yellow.png" style="top: 20px; right: 315px; max-width: 100%; height: auto; z-index: 2;")
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-purple.png" style="top: 100px; right: 310px; max-width: 100%; height: auto; z-index: 1;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 30px; left: 160px; width: 20px; height: 20px;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 180px; right: 730px; width: 20px; height: 20px;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; right: 500px; width: 20px; height: 20px;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; left: 120px; width: 20px; height: 20px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 25px; right: 590px; width: 15px; height: 15px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 450px; right: 720px; width: 15px; height: 15px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 600px; left: 520px; width: 15px; height: 15px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 500px; right: 200px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 30px; left: 160px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 180px; right: 730px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; right: 500px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; left: 120px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 25px; right: 590px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 450px; right: 720px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 600px; left: 520px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 500px; right: 200px; width: 15px; height: 15px;")
             div.text-circle.col-lg-3.col-md-6.col-sm-12.d-flex.align-items-center.justify-content-between(style="width: 270px; height: 50px;border-radius:20px; margin-top:100px;")
                 div.rounded-circle.bg-warning(style="width: 35px; height: 35px; margin-left:5px; ")
                 p.fs-6(style='margin-right:5px;') #1 Digital company in the town
-            div.d-flex.align-items-center.pt-3.col-lg-2.col-md-4.col-sm-12.mt-5
+            div.d-flex.align-items-center.pt-3.col-lg-2.col-md-4.col-sm-12.mt-2.mt-lg-5
                 h1.fw-bold.fs-1
                     | Amet Sed
                     | Cursus Eu
                     | Tellus Eget.
-            div.text.mt-3
+            div.text.mt-lg-3.mt-0
                 p.text-muted.col-lg-4.col-md-8.col-sm-10.
                     | Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim
                     | quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
-            div.buttons.mt-5.flex-row
+            div.buttons.mt-lg-5.mt-md-3.mt-0.flex-row
                 a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6(href="contact-us.html")
                     | Connect With Us
                 a.btn.fw-bold.text-violate.col-lg-2.col-sm-6(href="#")
                     | Browse Our Works
+            div(style="width:100%; height:45px")
         div.line-blue
-        div.container2-main.container-fluid.position-relative.text-center(style="width:100%; height:1000px;")
+        div.container2-main.container-fluid.position-relative.text-center(style="width:100%; height:auto")
             div.headers.pt-5
                 h1.fw-bold
                     | Services That Lead The Way To Better Business
@@ -57,14 +58,14 @@ html(lang="en")
                     | Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet blandit etiam orci est in vel lacus neque pretium.
             div.all-icon
                 div.row.d-flex.justify-content-center
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-4
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-4.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-1.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
                             | Mobile App Designing
                         p.pt-2.little-text.text-muted
                             | Justo, amet nisl velit quam. Turpis nulla morbi vestibulum morbi cum et.
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-4
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-4.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-2.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
@@ -72,14 +73,14 @@ html(lang="en")
                         p.pt-2.little-text.text-muted
                             | Eu aliquam libero vehicula posuere. Orci viverra id pharetra adipiscing. Convallis.
                 div.row.d-flex.justify-content-center
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-3
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-3.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-3.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
                             | Graphic Designing
                         p.pt-2.little-text.text-muted
                             | Aliquam ut sapien viverra blandit nisi. Nam fames suscipit erat sed id. Risus.
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-3
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-3.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-4.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
@@ -96,12 +97,12 @@ html(lang="en")
             div.all-icon
                 div.row.d-flex.justify-content-center
                     each num in [1, 2, 3, 4, 5, 6]
-                        div.col-1.d-flex.justify-content-center.mt-4
-                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: 60px;")
+                        div.col-2.col-lg-1.col-md-1.d-flex.justify-content-center.mt-0.mt-lg-4
+                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
                 div.row.d-flex.justify-content-center
                     each num in [7, 8, 9, 10, 11]
-                        div.col-1.d-flex.justify-content-center.mt-4
-                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: 60px;")
+                        div.col-lg-1.col-md-1.col-2.d-flex.justify-content-center.mt-0.mt-lg-4
+                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
         div.container3-main.container-fluid.position-relative(style="width:100%; height:1000px;")
             div.row
                 div.col-4(style="margin:0 80px;")
