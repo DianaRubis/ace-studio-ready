@@ -161,15 +161,28 @@ html(lang="en")
             div.text.d-flex.py-lg-3.py-1.py-md-2
                 p.text-muted.text-center
                     | Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.
-            div.row.justify-content-center.py-lg-3.py-1.py-md-2
-                div.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+            div.d-flex.row.justify-content-center.py-lg-3.py-1.py-md-2
+                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
                     img(src=`/img/home-page/work-img1.png` )
-                div.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
                     img(src=`/img/home-page/work-img2.png` )
-                div.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
                     img(src=`/img/home-page/work-img3.png` )
             a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill.my-lg-4.my-md-2.my-1(href="#")
                 | See all projects
+        div.container4-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.bg-light.py-1.py-lg-4.py-md-2(style="width:100%; height:auto;")
+            img.img-fluid.position-absolute.line(src="/img/home-page/vertical.png" style="top: 0; left: 780px; max-width: 4px; height: 210px;")
+
+            div.inf.px-md-4
+                div.row.justify-content-center
+                    div.col-12.col-lg-5.col-md-6.mb-3
+                        h1.fw-bold.fs-1
+                            | We’re a lean creative agency that uses design and code to solve problems.
+                    div.col-12.col-lg-4.col-md-6
+                        p.text-muted
+                            | Semper bibendum nisl, fermentum mi convallis. Sed vitae tincidunt nunc, aliquam orci. Porttitor faucibus morbi sed senectus justo, adipiscing augue. Est, in in pretium at libero morbi. Euismod viverra arcu nisi eu sit. Praesent diam non imperdiet imperdiet potenti tristique et. Amet nec.
+
+
 
 
     include ./parts/footer.pug
