@@ -16,7 +16,7 @@ html(lang="en")
     include ./parts/header.pug
 
     main.mt-lg-5.mt-2.mt-md-4
-        div.container1-main.container-fluid.ms-0.ms-lg-4.ms-md-2.h-auto(style='position: relative; width: 100%;  padding-top: 20px;')
+        div.container1-main.container-fluid.ps-1.ps-lg-4.ps-md-2.h-auto(style='position: relative; width: 100%;  padding-top: 20px;')
             div.msg.position-relative
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-orange.png" style="top: 120px; right: 100px; max-width: 100%; height: auto; z-index: 3;")
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-yellow.png" style="top: 20px; right: 315px; max-width: 100%; height: auto; z-index: 2;")
@@ -103,15 +103,15 @@ html(lang="en")
                     each num in [7, 8, 9, 10, 11]
                         div.col-lg-1.col-md-1.col-2.d-flex.justify-content-center.mt-0.mt-lg-4
                             img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
-        div.container3-main.container-fluid.position-relative(style="width:100%; height:1000px;")
+        div.container3-main.container-fluid.position-relative.mt-1.mt-lg-4.mt-md-2(style="width:100%; height:auto;")
             div.row
-                div.col-4(style="margin:0 80px;")
+                div.col-4.ps-lg-5.ps-md-3
                     img(src=`/img/home-page/container3-big-img.png`)
-                div.col-6
+                div.col-8.col-lg-6
                     div.headers
                         h1.fw-bold
                             | Our Process
-                    div.text.pt-3
+                    div.text.pt-1.pt-lg-4.pt-md-3
                         p.text-muted
                             | Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada.
                             | Tristique est tellus non maecenas in egestas aliquam. Eget dolor
