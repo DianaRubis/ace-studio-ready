@@ -103,11 +103,11 @@ html(lang="en")
                     each num in [7, 8, 9, 10, 11]
                         div.col-lg-1.col-md-1.col-2.d-flex.justify-content-center.mt-0.mt-lg-4
                             img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
-        div.container3-main.container-fluid.position-relative.mt-1.mt-lg-4.mt-md-2(style="width:100%; height:auto;")
+        div.container3-main.container-fluid.position-relative.mt-1.mt-lg-4.mt-md-2.justify-content-center(style="width:100%; height:auto;")
             div.row
-                div.col-4.ps-lg-5.ps-md-3
+                div.col-lg-4.ps-lg-5.ps-md-3.col-md-4.d-none.d-md-block(style="max-height:250px")
                     img(src=`/img/home-page/container3-big-img.png`)
-                div.col-8.col-lg-6
+                div.col-12.col-lg-6.col-md-7
                     div.headers
                         h1.fw-bold
                             | Our Process
@@ -116,8 +116,42 @@ html(lang="en")
                             | Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada.
                             | Tristique est tellus non maecenas in egestas aliquam. Eget dolor
                             | pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
-                    div.process-block.d-flex
-                        div.process-bg
+                    div.process-block.mt-lg-5.mt-1.mt-md-3.ps-lg-5.ps-md-3.ps-0
+                        div.discovery
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto.rounded-3
+                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto;")
+                                div.header.col-10
+                                    p.fw-bold Discovery
+                                    p
+                                    | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+                        div.discovery
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto.rounded-3
+                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto;")
+                                div.header.col-10
+                                    p.fw-bold Discovery
+                                    p
+                                        | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+                        div.discovery
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto.rounded-3
+                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto")
+                                div.header.col-10
+                                    p.fw-bold Discovery
+                                    p
+                                        | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+                        div.discovery
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto
+                                    img(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto")
+                                div.header.col-10
+                                    p.fw-bold Discovery
+                                    p
+                                        | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+
+
+
 
     include ./parts/footer.pug
     script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
