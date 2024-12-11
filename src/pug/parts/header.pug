@@ -1,14 +1,17 @@
 
 nav.navbar.navbar-light.bg-white.fixed-top
   div.container-fluid
-      a.navbar-brand.fw-bold.ps-5(href="index.html")
-        span.text-warning
-            | Ace
+      a.navbar-brand.fw-bold.ps-0.ps-md-5.ps-lg-5(href="index.html")
+        span.text-warning Ace
         |  Studios
-      a.btn.blue-color.ms-auto.text-white.fw-bold(href="contact-us.html")
-        | Connect with us
-      a.nav-link.dropdown-toggle-split(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false")
-        img(src="./img/header/menu-icon.png")
+      a.btn.blue-color.ms-auto.text-white.fw-bold.rounded-pill(href="contact-us.html")
+        span.d-block.d-sm-none(style="font-size: 10px;") Connect with us
+        span.d-none.d-sm-block(style="font-size: 18px;") Connect with us
+
+      a.nav-link.dropdown-toggle-split(href="#", id="navbarDropdown", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+        img.d-block.d-sm-none(src="./img/header/menu-icon.png", alt="menu icon", style="max-width: 30px; height: auto;")
+        img.d-none.d-sm-block(src="./img/header/menu-icon.png", alt="menu icon", style="max-width: 50px; height: auto;")
+
       ul.dropdown-menu.dropdown-menu-end(aria-labelledby="navbarDropdown")
         li.d-flex.justify-content-between.p-3
             a.blue-color.btn.text-white(href="#" style="font-size: 0.6rem;")

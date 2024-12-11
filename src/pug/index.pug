@@ -15,39 +15,40 @@ html(lang="en")
   body
     include ./parts/header.pug
 
-    main.mt-5
-        div.container1-main.container-fluid.ms-4(style='position: relative; width: 100%; height: 650px; padding-top: 20px;')
+    main.mt-lg-5.mt-2.mt-md-4
+        div.container1-main.container-fluid.ps-1.ps-lg-4.ps-md-2.h-auto(style='position: relative; width: 100%;  padding-top: 20px;')
             div.msg.position-relative
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-orange.png" style="top: 120px; right: 100px; max-width: 100%; height: auto; z-index: 3;")
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-yellow.png" style="top: 20px; right: 315px; max-width: 100%; height: auto; z-index: 2;")
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-purple.png" style="top: 100px; right: 310px; max-width: 100%; height: auto; z-index: 1;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 30px; left: 160px; width: 20px; height: 20px;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 180px; right: 730px; width: 20px; height: 20px;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; right: 500px; width: 20px; height: 20px;")
-                img(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; left: 120px; width: 20px; height: 20px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 25px; right: 590px; width: 15px; height: 15px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 450px; right: 720px; width: 15px; height: 15px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 600px; left: 520px; width: 15px; height: 15px;")
-                img(src="/img/home-page/x.png" style="position: absolute; top: 500px; right: 200px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 30px; left: 160px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 180px; right: 730px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; right: 500px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/ellipse.png" style="position: absolute; top: 590px; left: 120px; width: 20px; height: 20px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 25px; right: 590px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 450px; right: 720px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 600px; left: 520px; width: 15px; height: 15px;")
+                img.img-fluid.d-none.d-lg-block(src="/img/home-page/x.png" style="position: absolute; top: 500px; right: 200px; width: 15px; height: 15px;")
             div.text-circle.col-lg-3.col-md-6.col-sm-12.d-flex.align-items-center.justify-content-between(style="width: 270px; height: 50px;border-radius:20px; margin-top:100px;")
                 div.rounded-circle.bg-warning(style="width: 35px; height: 35px; margin-left:5px; ")
                 p.fs-6(style='margin-right:5px;') #1 Digital company in the town
-            div.d-flex.align-items-center.pt-3.col-lg-2.col-md-4.col-sm-12.mt-5
+            div.d-flex.align-items-center.pt-3.col-lg-2.col-md-4.col-sm-12.mt-2.mt-lg-5
                 h1.fw-bold.fs-1
                     | Amet Sed
                     | Cursus Eu
                     | Tellus Eget.
-            div.text.mt-3
+            div.text.mt-lg-3.mt-0
                 p.text-muted.col-lg-4.col-md-8.col-sm-10.
                     | Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim
                     | quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
-            div.buttons.mt-5.flex-row
-                a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6(href="contact-us.html")
+            div.buttons.mt-lg-5.mt-md-3.mt-0.flex-row
+                a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill(href="contact-us.html")
                     | Connect With Us
                 a.btn.fw-bold.text-violate.col-lg-2.col-sm-6(href="#")
                     | Browse Our Works
+            div(style="width:100%; height:45px")
         div.line-blue
-        div.container2-main.container-fluid.position-relative.text-center(style="width:100%; height:1000px;")
+        div.container2-main.container-fluid.position-relative.text-center(style="width:100%; height:auto")
             div.headers.pt-5
                 h1.fw-bold
                     | Services That Lead The Way To Better Business
@@ -57,14 +58,14 @@ html(lang="en")
                     | Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet blandit etiam orci est in vel lacus neque pretium.
             div.all-icon
                 div.row.d-flex.justify-content-center
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-4
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-4.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-1.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
                             | Mobile App Designing
                         p.pt-2.little-text.text-muted
                             | Justo, amet nisl velit quam. Turpis nulla morbi vestibulum morbi cum et.
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-4
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-4.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-2.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
@@ -72,14 +73,14 @@ html(lang="en")
                         p.pt-2.little-text.text-muted
                             | Eu aliquam libero vehicula posuere. Orci viverra id pharetra adipiscing. Convallis.
                 div.row.d-flex.justify-content-center
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-3
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-3.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-3.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
                             | Graphic Designing
                         p.pt-2.little-text.text-muted
                             | Aliquam ut sapien viverra blandit nisi. Nam fames suscipit erat sed id. Risus.
-                    div.col-3.d-flex.justify-content-center.align-items-center.flex-column.mt-3
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-3.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-4.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
@@ -96,27 +97,93 @@ html(lang="en")
             div.all-icon
                 div.row.d-flex.justify-content-center
                     each num in [1, 2, 3, 4, 5, 6]
-                        div.col-1.d-flex.justify-content-center.mt-4
-                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: 60px;")
+                        div.col-2.col-lg-1.col-md-1.d-flex.justify-content-center.mt-0.mt-lg-4
+                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
                 div.row.d-flex.justify-content-center
                     each num in [7, 8, 9, 10, 11]
-                        div.col-1.d-flex.justify-content-center.mt-4
-                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: 60px;")
-        div.container3-main.container-fluid.position-relative(style="width:100%; height:1000px;")
-            div.row
-                div.col-4(style="margin:0 80px;")
-                    img(src=`/img/home-page/container3-big-img.png`)
-                div.col-6
+                        div.col-lg-1.col-md-1.col-2.d-flex.justify-content-center.mt-0.mt-lg-4
+                            img(src=`/img/home-page/work-with${num}.png` style="max-width: 60px; height: auto")
+        div.container3-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.justify-content-center(style="width:100%; height:auto;")
+            div.row.justify-content-center
+                div.col-lg-4.ps-lg-5.ps-md-0.col-md-4.d-none.d-md-block
+                    img(src=`/img/home-page/container3-big-img.png` style="max-height:550px")
+                div.col-10.col-lg-6.col-md-7
                     div.headers
                         h1.fw-bold
                             | Our Process
-                    div.text.pt-3
+                    div.text.pt-1.pt-lg-4.pt-md-3
                         p.text-muted
                             | Sit arcu, egestas nunc, eros dignissim nunc, pretium malesuada.
                             | Tristique est tellus non maecenas in egestas aliquam. Eget dolor
                             | pellentesque consequat donec lectus nisl ligula. Ut sed nisi amet.
-                    div.process-block.d-flex
-                        div.process-bg
+                    div.process-block.mt-lg-5.mt-1.mt-md-3.ps-lg-5.ps-md-3.ps-0
+                        div.discovery
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto.rounded-3
+                                    img.d-block.d-sm-none(src=`/img/home-page/discovery.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                    img.d-none.d-sm-block(src=`/img/home-page/discovery.png` style="max-width: 60px; height: auto; border-radius:15px;")
+                                div.header.col-10
+                                    p.fw-bold Discovery
+                                    p.text-muted
+                                      | Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Amet malesuada eget aliquam imperdiet. Arcu dolor sed pretiu
+                        div.plan
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto.rounded-3
+                                    img.d-block.d-sm-none(src=`/img/home-page/plan.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                    img.d-none.d-sm-block(src=`/img/home-page/plan.png` style="max-width: 60px; height: auto; border-radius:15px;")
+                                div.header.col-10
+                                    p.fw-bold Plan
+                                    p.text-muted
+                                        | Tellus, lacus, sem adipiscing ac sem amet. Vitae proin volutpat cras tempus vitae. Ipsum consectetur quis diam hendrerit pharetra amet scelerisque. Elementum risus aliquam quam etiam. Eget eu risus dui lacus, orci. Cras ultricies posuere adipiscing faucibu.
+                        div.execute
+                            dov.row.mt-lg-3.mt-md-2.mt-1
+                                div.img.col-2.ms-auto.rounded-3
+                                    img.d-block.d-sm-none(src=`/img/home-page/execute.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                    img.d-none.d-sm-block(src=`/img/home-page/execute.png` style="max-width: 60px; height: auto; border-radius:15px;")
+                                div.header.col-10
+                                    p.fw-bold Execute
+                                    p.text-muted
+                                        | Congue ridiculus at tortor mattis turpis bibendum at pulvinar viverra. Ultrices morbi amet quam nisl risus libero, sodales nibh faucibus. Sed gravida elementum auctor fermentum id sem
+                        div.deliver
+                           dov.row.mt-lg-3.mt-md-2.mt-1
+                                   div.img.col-2.ms-auto
+                                       img.d-block.d-sm-none(src=`/img/home-page/deliver.png` style="max-width: 40px; height: auto; border-radius:15px;")
+                                       img.d-none.d-sm-block(src=`/img/home-page/deliver.png` style="max-width: 60px; height: auto; border-radius:15px;")
+                                   div.header.col-10
+                                       p.fw-bold Deliver
+                                       p.text-muted
+                                           | Pellentesque id pharetra, semper neque purus. Ante lacinia in ut sagittis sed sapien. In facilisi in a diam. Pellentesque arcu faucibus vel ornare pulvinar sollicitudin eu. Tempus nisi malesuada convallis velit viverra odio. Senectus consectetur fames in sed velit, ornare. Sed arcu.
+
+        div.container4-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.text-center(style="width:100%; height:auto;")
+            div.headers.pt-5
+                h1.fw-bold
+                    | See Our Work
+            div.text.d-flex.py-lg-3.py-1.py-md-2
+                p.text-muted.text-center
+                    | Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.
+            div.d-flex.row.justify-content-center.py-lg-3.py-1.py-md-2
+                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                    img(src=`/img/home-page/work-img1.png` )
+                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                    img(src=`/img/home-page/work-img2.png` )
+                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
+                    img(src=`/img/home-page/work-img3.png` )
+            a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill.my-lg-4.my-md-2.my-1(href="#")
+                | See all projects
+        div.container4-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.bg-light.py-1.py-lg-4.py-md-2(style="width:100%; height:auto;")
+            img.img-fluid.position-absolute.line(src="/img/home-page/vertical.png" style="top: 0; left: 780px; max-width: 4px; height: 210px;")
+
+            div.inf.px-md-4
+                div.row.justify-content-center
+                    div.col-12.col-lg-5.col-md-6.mb-3
+                        h1.fw-bold.fs-1
+                            | We’re a lean creative agency that uses design and code to solve problems.
+                    div.col-12.col-lg-4.col-md-6
+                        p.text-muted
+                            | Semper bibendum nisl, fermentum mi convallis. Sed vitae tincidunt nunc, aliquam orci. Porttitor faucibus morbi sed senectus justo, adipiscing augue. Est, in in pretium at libero morbi. Euismod viverra arcu nisi eu sit. Praesent diam non imperdiet imperdiet potenti tristique et. Amet nec.
+
+
+
 
     include ./parts/footer.pug
     script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
