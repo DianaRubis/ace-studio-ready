@@ -1,3 +1,4 @@
+
 .text-circle{
   background-color:#d3d3d3;
 }
@@ -35,6 +36,13 @@
   margin:0 auto;
 }
 
+
+.container9-main .text{
+  width: 100%;
+  max-width: 850px;
+  margin:0 auto;
+}
+
 @media (max-width: 1450px) {
   .line {
     display: none;
@@ -45,7 +53,22 @@
 
 .rating span {
   font-size: 24px;
-  color: #ffc107; /* Цвет неактивных звезд */
+  color: #ffc107;
   transition: color 0.3s;
 }
 
+
+.border-right{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.borders-b{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.borders-t{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
