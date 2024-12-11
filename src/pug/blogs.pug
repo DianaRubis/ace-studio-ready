@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title start
+    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous')
+    //- link(rel="stylesheet" href='https://unpkg.com/swiper/swiper-bundle.css')
+    //- link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+    link(rel="stylesheet" href="./css/main.css")
+
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css")
+  body
+    include ./parts/header.pug
+    main.mt-lg-5.mt-2.mt-md-4.bg-light
+        div.container1-blogs.container-fluid
+            div.text-center.py-lg-5.py-md-3.py-1
+                div.header
+                    h1.fw-bold
+                        | Blogs
+                div.text
+                    p.text-muted.fs-lg-5.fs-md-6.py-lg-4.py-md-2.py-1
+                        | Ut condimentum volutpat, eget mauris senectus.
+            div.all-blogs.row.d-flex.justify-content-center
+                div.col-lg-6.row
+                    div.breaking-new.row.d-flex-justify-content-center.mb-lg-5.mb-md-3.mb-1
+                        div.col-5
+                            img(src="/img/blogs-page/breaking-new.png")
+                        div.col-7.bg-white.border-right
+                            div.header.mt-lg-4.mt-md-2.mt-1
+                                h4.fw-bold
+                                    | Porttitor pharetra, consectetur viverra est nisl a, vulputate id...
+                            div.text.my-lg-3.my-md-2.my-1
+                                p.text-muted
+                                    | Dui massa sapien ornare leo. Sagittis, sollicitudin sed integer maecenas sit. Nibh suspendisse lectus hendrerit pretium...
+                            div.text-muted.d-flex.justify-content-between.mt-lg-5.mt-md-3.mt-1
+                                p
+                                    | 13 Sept, 2021
+                                p
+                                    | Technology
+                    div.row.justify-content-between
+                        div.new1.col-lg-5.bg-white.borders-b.my-lg-5.my-md-3.my-1(style="padding:0;")
+                            img.borders-t(src="/img/blogs-page/new1.png")
+                            h6.fw-bold.p-lg-2.p-md-2.p-1
+                                | Porttitor pharetra, consectetur viverra est nisl a, vulputate id.
+                            div.text-muted.d-flex.justify-content-between.mt-lg-3.mt-md-2.mt-1.p-lg-2.p-md-2.p-1(style="font-size:12px")
+                                p
+                                    | 13 Sept, 2021
+                                p
+                                    | Technology
+                        div.new1.col-lg-5.bg-white.borders-b.my-lg-5.my-md-3.my-1(style="padding:0;")
+                            img.borders-t(src="/img/blogs-page/new1.png")
+                            h6.fw-bold.p-lg-2.p-md-2.p-1
+                                | Porttitor pharetra, consectetur viverra est nisl a, vulputate id.
+                            div.text-muted.d-flex.justify-content-between.mt-lg-3.mt-md-2.mt-1.p-lg-2.p-md-2.p-1(style="font-size:12px")
+                                p
+                                    | 13 Sept, 2021
+                                p
+                                    | Technology
+
+                div.col-lg-4.d-none.d-md-block
+        div.container2-blogs.container-fluid
+
+
+
+
+
+
+
+
+
+
+    include ./parts/footer.pug
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js' integrity='sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT' crossorigin='anonymous')
+    //- script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    //- script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+    script(src="https://polyfill.io/v3/polyfill.min.js?features=default")
+    script(src="./js/main.js")
