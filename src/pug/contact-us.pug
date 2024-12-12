@@ -15,98 +15,97 @@ html(lang="en")
   body
     include ./parts/header.pug
     main(style="margin-top:100px;")
-        div.row
-            div.col-12.d-flex.justify-content-center
+        div.text-center
                 h1
                  | Contact us
-            div.col-12.d-flex.justify-content-center
                 p
                  | Felis nunc, aliquet quam dictum senectus nunc.
-        div.row.d-flex.justify-content-center.mt-lg-3
-            div.col-10.bg-light.brad.p-lg-5.p-md-3.p-2
-                div.row.brad
-                    div.col-lg-4.col-md-8.col-10.bradpurp.purpbg.p-lg-5.p-md-3.p-2.pe-lg-0.pe-md-0.pe-0
-                        div.row
-                            div.col-lg-10
-                                h3.mt-lg-3.mt-md-2.mt-1.text-white Contact Information
-                                p.mt-lg-3.tlight
-                                 | Fill up the form and our Team will get back to you within 24 hours.
-                        div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
-                            div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
-                                img(src="/img/contact/Phone.png" style="max-width: 15px; height: 15px;")
-                            div.col-lg-8.col-md-10.col-11
-                                p.text-white.fs-6
-                                 | +91 98765 43210
-                        div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
-                            div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
-                                img(src="/img/contact/post.png" style="max-width: 15px; height: 15px;")
-                            div.col-lg-8.col-md-10.col-11
-                                a.text-white.fs-6(href="domain@paypal.com" target="_blank" title="Instagram")
-                                 | domain@paypal.com
-                        div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
-                            div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
-                                img(src="/img/contact/Planet.png" style="max-width: 15px; height: 15px;")
-                            div.col-lg-8.col-md-10.col-11
-                                a.text-white.fs-6(href="https://paypal.com" target="_blank" title="Instagram")
-                                 | https://paypal.com
-                        div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
-                            div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
-                                img(src="/img/contact/Location.png" style="max-width: 15px; height: 15px;")
-                            div.col-lg-8.col-md-10.col-11
-                                a.text-white.fs-6(href="#" target="_blank" title="Instagram") Location
-                    div.col-lg-8.p-lg-5
-                        div.row
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                p.fw-bold
-                                 | First Name
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                p.fw-bold
-                                 | Last Name
-                        div.row
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                input.inp(type="text" style="width: 100%;")
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                input.inp(type="text" style="width: 100%;")
-                        div.row
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                p.fw-bold
-                                 | Mail
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                p.fw-bold
-                                 | Phone
-                        div.row
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                input.inp(type="email" style="width: 100%;")
-                            div.col-6.mt-lg-3.mt-md-2.mt-2
-                                input.inp(type="tel" style="width: 100%;")
-                        div.row.mt-lg-3.mt-md-2.mt-2
-                            p.fw-bold What service do you need?
-                        div.row.mt-lg-3.mt-md-2.mt-2
-                            div.col-lg-4.mt-lg-3.mt-md-2.mt-2
-                                input.form-check-input(type="radio" id="web-design-1" name="design-options")
-                                label.form-check-label(for="web-design-1") Web Design
-                            div.col-lg-4.mt-lg-3.mt-md-2.mt-2
-                                input.form-check-input(type="radio" id="web-design-2" name="design-options")
-                                label.form-check-label(for="web-design-2") App Design
-                            div.col-lg-4.mt-lg-3.mt-md-2.mt-2
-                                input.form-check-input(type="radio" id="web-design-3" name="design-options")
-                                label.form-check-label(for="web-design-3") Graphic Design
-                        div.row.mt-lg-3
-                            div.col-lg-4.mt-lg-3.mt-md-2.mt-2
-                                input.form-check-input(type="radio" id="web-design-4" name="design-options")
-                                label.form-check-label(for="web-design-4") Digital Marketing
-                            div.col-lg-4.mt-lg-3.mt-md-2.mt-2
-                                input.form-check-input(type="radio" id="web-design-5" name="design-options")
-                                label.form-check-label(for="web-design-5") Other
-                        div.row
-                            div.col-12.mt-lg-3.mt-md-2.mt-2
-                                p.fw-bold Message
-                            div.col-12.mt-lg-3.mt-md-2.mt-2
-                                input.inp(type="text" style="width: 100%;" placeholder="Write your message...")
-                        div.row
-                            div.col-12.mt-lg-3.mt-md-2.mt-2.d-flex.justify-content-end
-                                button.btn.blue-color.text-white.fw-bold.rounded-pill.m-md-2.m-2(type="submit")
-                                 | Send Message
+        div.container-fluid
+            div.row.d-flex.justify-content-center.mt-lg-3
+                div.col-10.bg-light.brad.p-lg-5.p-md-3.p-2
+                    div.row.brad
+                        div.col-lg-4.col-md-8.col-10.bradpurp.purpbg.p-lg-5.p-md-3.p-2.pe-lg-0.pe-md-0.pe-0
+                            div.row
+                                div.col-lg-10
+                                    h3.mt-lg-3.mt-md-2.mt-1.text-white Contact Information
+                                    p.mt-lg-3.tlight
+                                     | Fill up the form and our Team will get back to you within 24 hours.
+                            div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
+                                div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
+                                    img(src="/img/contact/Phone.png" style="max-width: 15px; height: 15px;")
+                                div.col-lg-8.col-md-10.col-11
+                                    p.text-white.fs-6
+                                     | +91 98765 43210
+                            div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
+                                div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
+                                    img(src="/img/contact/post.png" style="max-width: 15px; height: 15px;")
+                                div.col-lg-8.col-md-10.col-11
+                                    a.text-white.fs-6(href="domain@paypal.com" target="_blank" title="Instagram")
+                                     | domain@paypal.com
+                            div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
+                                div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
+                                    img(src="/img/contact/Planet.png" style="max-width: 15px; height: 15px;")
+                                div.col-lg-8.col-md-10.col-11
+                                    a.text-white.fs-6(href="https://paypal.com" target="_blank" title="Instagram")
+                                     | https://paypal.com
+                            div.row.mt-lg-3.mt-md-2.mt-1.d-flex.align-items-center.flex-nowrap
+                                div.col-lg-1.col-md-1.col-1.ms-2.rounded-circle.d-flex.justify-content-center.align-items-center.bg-white(style="width:30px; height:30px;")
+                                    img(src="/img/contact/Location.png" style="max-width: 15px; height: 15px;")
+                                div.col-lg-8.col-md-10.col-11
+                                    a.text-white.fs-6(href="#" target="_blank" title="Instagram") Location
+                        div.col-lg-8.p-lg-5
+                            div.row
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    p.fw-bold
+                                     | First Name
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    p.fw-bold
+                                     | Last Name
+                            div.row
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    input.inp(type="text" style="width: 100%;")
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    input.inp(type="text" style="width: 100%;")
+                            div.row
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    p.fw-bold
+                                     | Mail
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    p.fw-bold
+                                     | Phone
+                            div.row
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    input.inp(type="email" style="width: 100%;")
+                                div.col-6.mt-lg-3.mt-md-2.mt-2
+                                    input.inp(type="tel" style="width: 100%;")
+                            div.row.mt-lg-3.mt-md-2.mt-2
+                                p.fw-bold What service do you need?
+                            div.row.mt-lg-3.mt-md-2.mt-2
+                                div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                                    input.form-check-input(type="radio" id="web-design-1" name="design-options")
+                                    label.form-check-label(for="web-design-1") Web Design
+                                div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                                    input.form-check-input(type="radio" id="web-design-2" name="design-options")
+                                    label.form-check-label(for="web-design-2") App Design
+                                div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                                    input.form-check-input(type="radio" id="web-design-3" name="design-options")
+                                    label.form-check-label(for="web-design-3") Graphic Design
+                            div.row.mt-lg-3
+                                div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                                    input.form-check-input(type="radio" id="web-design-4" name="design-options")
+                                    label.form-check-label(for="web-design-4") Digital Marketing
+                                div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                                    input.form-check-input(type="radio" id="web-design-5" name="design-options")
+                                    label.form-check-label(for="web-design-5") Other
+                            div.row
+                                div.col-12.mt-lg-3.mt-md-2.mt-2
+                                    p.fw-bold Message
+                                div.col-12.mt-lg-3.mt-md-2.mt-2
+                                    input.inp(type="text" style="width: 100%;" placeholder="Write your message...")
+                            div.row
+                                div.col-12.mt-lg-3.mt-md-2.mt-2.d-flex.justify-content-end
+                                    button.btn.blue-color.text-white.fw-bold.rounded-pill.m-md-2.m-2(type="submit")
+                                     | Send Message
             div.container4-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.text-center(style="width:100%; height:auto;")
                 div.headers.pt-5
                     h1.fw-bold
