@@ -10,13 +10,16 @@ html(lang="en")
     //- link(rel="stylesheet" href='https://unpkg.com/swiper/swiper-bundle.css')
     //- link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
     link(rel="stylesheet" href="./css/main.css")
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+
 
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css")
   body
     include ./parts/header.pug
 
     main.mt-lg-5.mt-2.mt-md-4
-        div.container1-main.container-fluid.ps-1.ps-lg-4.ps-md-2.h-auto(style='position: relative; width: 100%;  padding-top: 20px;')
+        div.container1-main.container-fluid.ps-4.ps-lg-4.ps-md-2.h-auto(style='position: relative; width: 100%;  padding-top: 20px;')
             div.msg.position-relative
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-orange.png" style="top: 120px; right: 100px; max-width: 100%; height: auto; z-index: 3;")
                 img.img-fluid.position-absolute.d-none.d-lg-block(src="/img/home-page/msg-yellow.png" style="top: 20px; right: 315px; max-width: 100%; height: auto; z-index: 2;")
@@ -41,7 +44,7 @@ html(lang="en")
                 p.text-muted.col-lg-4.col-md-8.col-sm-10.
                     | Vitae augue elementum ullamcorper porta adipiscing dui, consequat enim
                     | quam. Nisi rhoncus vitae orci duis diam eget faucibus. Nulla enim sit nibh sed.
-            div.buttons.mt-lg-5.mt-md-3.mt-0.flex-row
+            div.buttons.mt-lg-5.mt-md-3.mt-2.flex-row
                 a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill(href="contact-us.html")
                     | Connect With Us
                 a.btn.fw-bold.text-violate.col-lg-2.col-sm-6(href="#")
@@ -58,14 +61,14 @@ html(lang="en")
                     | Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet blandit etiam orci est in vel lacus neque pretium.
             div.all-icon
                 div.row.d-flex.justify-content-center
-                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-4.mt-md-2
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-2.mt-lg-4.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-1.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
                             | Mobile App Designing
                         p.pt-2.little-text.text-muted
                             | Justo, amet nisl velit quam. Turpis nulla morbi vestibulum morbi cum et.
-                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-4.mt-md-2
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-2.mt-lg-4.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-2.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
@@ -73,14 +76,14 @@ html(lang="en")
                         p.pt-2.little-text.text-muted
                             | Eu aliquam libero vehicula posuere. Orci viverra id pharetra adipiscing. Convallis.
                 div.row.d-flex.justify-content-center
-                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-3.mt-md-2
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-2.mt-lg-3.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-3.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
                             | Graphic Designing
                         p.pt-2.little-text.text-muted
                             | Aliquam ut sapien viverra blandit nisi. Nam fames suscipit erat sed id. Risus.
-                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-1.mt-lg-3.mt-md-2
+                    div.col-6.col-lg-3.col-md-4.d-flex.justify-content-center.align-items-center.flex-column.mt-2.mt-lg-3.mt-md-2
                         div.img-bg.rounded-circle.d-flex.justify-content-center.align-items-center.icon-bg(style="width:100px; height:100px;")
                             img(src="/img/home-page/img-4.png" style="max-width: 60px; height: 60px;")
                         p.pt-4.text-violate.fw-bold
@@ -94,7 +97,7 @@ html(lang="en")
                 p.text-muted.text-center
                     | Dictum tortor, sed scelerisque mattis malesuada. Urna sed magna a sed nulla egestas bibendum eget.
                     | Consectetur urna varius dolor, fermentum turpis. Sit malesuada id tortor viverra gravida cras. In quis.
-            div.all-icon
+            div.all-icon.my-lg-3.my-md-2.my-3
                 div.row.d-flex.justify-content-center
                     each num in [1, 2, 3, 4, 5, 6]
                         div.col-2.col-lg-1.col-md-1.d-flex.justify-content-center.mt-0.mt-lg-4
@@ -161,15 +164,26 @@ html(lang="en")
             div.text.d-flex.py-lg-3.py-1.py-md-2
                 p.text-muted.text-center
                     | Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.
-            div.d-flex.row.justify-content-center.py-lg-3.py-1.py-md-2
-                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
-                    img(src=`/img/home-page/work-img1.png` )
-                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
-                    img(src=`/img/home-page/work-img2.png` )
-                div.d-flex.col-10.col-lg-3.col-md-3.justify-content-center.my-2
-                    img(src=`/img/home-page/work-img3.png` )
-            a.btn.blue-color.text-white.fw-bold.col-lg-2.col-sm-6.rounded-pill.my-lg-4.my-md-2.my-1(href="#")
-                | See all projects
+        div.container10-main.container-fluid
+            div.autoplay.d-flex.justify-content-center.align-items-center
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide1.png` alt="Slide 1")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide2.png` alt="Slide 2")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide3.png` alt="Slide 3")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide4.jpg` alt="Slide 4")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide5.jpg` alt="Slide 5")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide6.png` alt="Slide 6")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide7.jpg` alt="Slide 7")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide8.jpg` alt="Slide 8")
+                div.d-flex.justify-content-center
+                    img.slide.img-fluid(src=`/img/home-page/slide9.jpg` alt="Slide 9")
 
         div.container5-main.container-fluid.position-relative.my-1.my-lg-5.my-md-2.bg-light.py-1.py-lg-4.py-md-2(style="width:100%; height:auto;")
             img.img-fluid.position-absolute.line(src="/img/home-page/vertical.png" style="top: 0; left: 780px; max-width: 4px; height: 210px;")
@@ -203,7 +217,7 @@ html(lang="en")
                         h1.fw-bold.col-lg-8.col-md-10
                             | Ultimate Services for your businesses.
                     div.text.pt-1.pt-lg-4.pt-md-3.row
-                        p.text-muted.col-lg-8.col-md-10.fs-6.fs-lg-5
+                        p.text-muted.col-lg-8.col-md-10
                             | Nunc, porta phasellus nisl ac risus eget lectus neque, mauris. Dictumst mauris, id eget tellus tincidunt sit nisi, non cras.
                     div.row
                         div.col-lg-6.my-lg-4.my-md-2-my-1
@@ -276,10 +290,16 @@ html(lang="en")
                 img.img-fluid(src=`/img/home-page/container9-small-img.png`)
                 img.img-fluid(src=`/img/home-page/container9-small-img.png`)
 
+
+
+
     include ./parts/footer.pug
     script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js' integrity='sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT' crossorigin='anonymous')
     //- script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
     //- script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
     script(src="https://polyfill.io/v3/polyfill.min.js?features=default")
+
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
     script(src="./js/main.js")
