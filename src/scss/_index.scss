@@ -100,3 +100,21 @@
   max-height:300px;
   border-radius:10px;
 }
+
+ul.dropdown-menu {
+  width: 25%;
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  ul.dropdown-menu {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  ul.dropdown-menu {
+    width: 100%;
+  }
+}
