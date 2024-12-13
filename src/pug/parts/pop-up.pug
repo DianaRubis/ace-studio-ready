@@ -2,56 +2,48 @@ div.modal(id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" ar
   div.modal-dialog.modal-dialog-centered.modal-lg
     div.modal-content
       //- Заголовок модального окна
-      div.modal-header
+      div.modal-header.bg-light
         h5.modal-title(id="exampleModalLabel") Connect with us
         button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
 
       //- Тело модального окна
-      div.modal-body
+      div.modal-body.bg-light
         div.container-fluid
-            div.row.d-flex.justify-content-center.mt-lg-3
-                div.col-10.bg-light.brad.p-lg-5.p-md-3.p-2
                     div.row
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-6.col-md-12.col-12.mt-lg-3.mt-md-2.mt-2
                             p.fw-bold
                              | First Name
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
+                            input.inp(type="text" style="width: 100%;")
+                        div.col-lg-6.col-md-12.col-12.mt-lg-3.mt-md-2.mt-2
                             p.fw-bold
                              | Last Name
-                    div.row
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
-                            input.inp(type="text" style="width: 100%;")
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
                             input.inp(type="text" style="width: 100%;")
                     div.row
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-6.col-md-12.col-12.mt-lg-3.mt-md-2.mt-2
                             p.fw-bold
                              | Mail
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
+                            input.inp(type="text" style="width: 100%;")
+                        div.col-lg-6.col-md-12.col-12.mt-lg-3.mt-md-2.mt-2
                             p.fw-bold
                              | Phone
-                    div.row
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
-                            input.inp(type="email" style="width: 100%;")
-                        div.col-6.mt-lg-3.mt-md-2.mt-2
-                            input.inp(type="tel" style="width: 100%;")
+                            input.inp(type="text" style="width: 100%;")
                     div.row.mt-lg-3.mt-md-2.mt-2
                         p.fw-bold What service do you need?
                     div.row.mt-lg-3.mt-md-2.mt-2
-                        div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-4.col-md-6.col-12.mt-lg-3.mt-md-2.mt-2
                             input.form-check-input(type="radio" id="web-design-1" name="design-options")
                             label.form-check-label(for="web-design-1") Web Design
-                        div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-4.col-md-6.col-12.mt-lg-3.mt-md-2.mt-2
                             input.form-check-input(type="radio" id="web-design-2" name="design-options")
                             label.form-check-label(for="web-design-2") App Design
-                        div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-4.col-md-6.col-12.mt-lg-3.mt-md-2.mt-2
                             input.form-check-input(type="radio" id="web-design-3" name="design-options")
                             label.form-check-label(for="web-design-3") Graphic Design
                     div.row.mt-lg-3
-                        div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-4.col-md-6.col-12.mt-lg-3.mt-md-2.mt-2
                             input.form-check-input(type="radio" id="web-design-4" name="design-options")
                             label.form-check-label(for="web-design-4") Digital Marketing
-                        div.col-lg-4.mt-lg-3.mt-md-2.mt-2
+                        div.col-lg-4.col-md-6.col-12.mt-lg-3.mt-md-2.mt-2
                             input.form-check-input(type="radio" id="web-design-5" name="design-options")
                             label.form-check-label(for="web-design-5") Other
                     div.row
@@ -61,6 +53,6 @@ div.modal(id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" ar
                             input.inp(type="text" style="width: 100%;" placeholder="Write your message...")
 
       //- Футер модального окна
-      div.modal-footer
+      div.modal-footer.bg-light
         button.btn.fw-bold.text-violate(type="button" data-bs-dismiss="modal") Close
         button.btn.blue-color.text-white.fw-bold.rounded-pill(type="submit") Send Message
